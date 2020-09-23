@@ -4,10 +4,45 @@ body {
 
 .nav {
   background-color: #383737;
+  position: fixed;
+  width: 100%;
 }
 
-.nav-dropdown {
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 19px;
+}
+
+.a-link {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.dropdown {
   color: #fff;
   text-decoration: none;
   display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  background: #01b7ff;
+  padding: 0;
+  display: none;
+}
+
+.dropdown-content--item {
+  list-style: none;
+  padding: 20px 45px 20px 20px;
+}
+
+.dropdown-content--item:hover {
+  background: #008dc5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

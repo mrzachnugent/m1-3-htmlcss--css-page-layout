@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+img {
+  width: calc(100% / 3);
+  padding: 1px;
+}

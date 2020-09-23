@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav {
+  background: #222;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  align-self: center;
+  transition: all 0.2s ease-in-out;
+}
+
+img {
+  padding-top: 6px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}

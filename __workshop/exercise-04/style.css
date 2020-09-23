@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 28px;
+}
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+.viewport {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 600px;
+  text-align: center;
+}
+
+button {
+  font-family: "Kumbh Sans", sans-serif;
+  background: transparent;
+  padding: 15px 20px 10px 20px;
+  border-radius: 7px;
+  color: #555;
+  border: 2px solid #555;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+p {
+  padding: 0 30px 10px 30px;
+}
+
+a {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(0, 145, 230);
+}

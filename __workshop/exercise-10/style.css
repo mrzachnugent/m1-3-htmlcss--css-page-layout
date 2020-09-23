@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .main {
@@ -7,10 +8,64 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .fast {
+  position: relative;
+  animation: slideleft 1s;
 }
 
 .cool {
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.4);
+  background-color: rgb(0, 141, 235);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+/* .cool:hover {
+  transform: scale(1.2);
+} */
+
+.cool:focus {
+  outline: none;
+  animation: bounce 1s;
+  /* animation: rotate 1s; */
+}
+
+@keyframes slideleft {
+  from {
+    left: 80%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.2) rotate(180deg);
+  }
+  90% {
+    transform: scale(0.9) rotate(270deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+/* @keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+} */

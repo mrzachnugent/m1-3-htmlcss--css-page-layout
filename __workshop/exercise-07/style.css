@@ -2,6 +2,45 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 50px;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav ul {
+  list-style: none;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-nav ul:last-of-type {
+  padding-right: 10px;
+}
+
 .mobile-nav-button img {
   width: 18px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin: auto 0;
+  }
 }
